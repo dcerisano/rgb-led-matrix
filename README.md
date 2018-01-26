@@ -23,7 +23,6 @@
 
 ### Notes and suggestions
 * Configure any size of RGB strip as an Nx1 matrix
-* Autostart the server and send it RGB notifications from anywhere (IoT, email, etc)
 
 ### TO DO
 * More devices!
