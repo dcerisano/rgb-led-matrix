@@ -16,7 +16,6 @@
 * Run the [`server`](https://github.com/dcerisano/rgb-led-matrix/blob/master/webserver/server.js) as root/adminstrator: `node server.js`   
 * Hit the REST API for the example shaders:  
 [cpu-meter](http://localhost:8080/?shader=cpu_meter) 
-[notifier](http://localhost:8080/?shader=notifier&filename=vrip.jpg) 
 [fireplace](http://localhost:8080/?shader=fireplace) 
 [unicorn](http://localhost:8080/?shader=unicorn) 
 [timesquare](http://localhost:8080/?shader=timesquare) 
