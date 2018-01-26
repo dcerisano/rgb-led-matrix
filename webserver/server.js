@@ -17,7 +17,6 @@ const url            = require('url');
 const path           = require('path');
 const WebSocket      = require('ws');
 
-const ambilight   = require("../shaders/ambilight.js");
 const notifier    = require("../shaders/notifier.js");
 const unicorn     = require("../shaders/unicorn.js");
 const fireplace   = require("../shaders/fireplace.js");
