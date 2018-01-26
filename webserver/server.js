@@ -24,8 +24,8 @@ const aurora      = require("../shaders/aurora.js");
 const timesquare  = require("../shaders/timesquare.js");
 const cpu_meter   = require("../shaders/cpu_meter.js"); 
 const signature   = require("../shaders/signature.js"); 
-const fade_out    = require("../shaders/signature.js"); 
-const plasma      = require("../shaders/plasma.js"); 
+
+
 
 var app    =  express();
 var server = http.createServer(app);
@@ -38,10 +38,6 @@ app.get('/', function (req, res) {
 	params = {};
 	params.width=8;
 	params.height=1;
-
-	if(req.query.filename)
-		params.image=req.query.filename;
-	
 	params.name=req.query.shader;
 	params.shader=req.query.shader;
 	set_shader(params);
@@ -82,10 +78,6 @@ function set_shader(params)
 	case "cpu_meter":
 		rgb_led_matrix.setShader(cpu_meter, params);
 		break;
-	case "notifier":
-		params.image = path.join(__dirname + "/img/" + params.image);
-		rgb_led_matrix.setShader(notifier, params);
-		break;
 	case "aurora":
 		rgb_led_matrix.setShader(aurora, params);
 		break;
@@ -95,26 +87,11 @@ function set_shader(params)
 	case "fireplace":
 		rgb_led_matrix.setShader(fireplace, params);
 		break;
-	case "ambilight":
-		rgb_led_matrix.setShader(ambilight, params);
-		break;
 	case "timesquare":
 		rgb_led_matrix.setShader(timesquare, params);
 		break;
 	case "signature":
 		rgb_led_matrix.setShader(signature, params);
-		break;
-	case "plasma":
-		rgb_led_matrix.setShader(plasma, params);
-		break;
-	case "fade_out":
-		rgb_led_matrix.setShader(fade_out, params);
-	case "stop":
-		rgb_led_matrix.stop();
-		break;
-	case "start":
-		rgb_led_matrix.start();
-		break;
 		break;
 	default:
 	}
