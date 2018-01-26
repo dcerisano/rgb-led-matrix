@@ -33,7 +33,6 @@ var socket = null;
 //REST API
 
 app.get('/', function (req, res) {
-
 	params = {};
 	params.width=8;
 	params.height=1;
