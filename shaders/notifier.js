@@ -51,6 +51,7 @@ function start(p){
 		num_frames = params.duration*60;
 
 	if (params.image){
+		console.log(params.image);
 		jimp.read(params.image, function (err, image) {
 			image.resize(params.width, params.height);
 			frame = rgb_util.rgba2rgb(image.bitmap.data);
