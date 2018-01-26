@@ -2,7 +2,7 @@
 //eg. http://localhost:5000 for the client UI
 //eg. http://localhost:5000/?shader=ambilight for a specific shader
 
-var DEBUG = true;
+var DEBUG = false;
 
 module.exports = {
 		send: function(method,params) {

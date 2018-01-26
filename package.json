@@ -13,7 +13,7 @@
     "escapedName": "rgb-led-matrix",
     "rawSpec": "^1.4.0",
     "saveSpec": null,
-    "fetchSpec": "^1.4.1"
+    "fetchSpec": "^1.4.2"
   },
   "_requiredBy": [
     "#USER",
