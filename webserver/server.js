@@ -37,6 +37,12 @@ var socket = null;
 app.get('/', function (req, res) {
 
 	params = {};
+	params.width=8;
+	params.height=1;
+
+	if(req.query.image)
+		params.image=req.query.image;
+	
 	params.shader=req.query.shader;
 	set_shader(params);
 	res.end();
@@ -49,13 +55,13 @@ const wss = new WebSocket.Server({ server });
 
 wss.on('connection', function connection(ws, req) {
 	socket = ws;
-	
+
 	//GOT MESSAGE FROM CLIENT
 	socket.on('message', function incoming(message) {
 		DEBUG && console.log("WEBSOCKET: GOT MESSAGE FROM CLIENT: "+message.toString());
 		interpret(message.toString());
 	});
-	
+
 	//ERRORS FROM WEBSOCKET
 	socket.on('error', function () {
 		DEBUG && console.log("WEBSOCKET: ERROR");
@@ -78,7 +84,6 @@ function set_shader(params)
 		break;
 	case "notifier":
 		params.image = path.join(__dirname + "/img/" + params.image);
-		params.sound = path.join(__dirname + "/sounds/" + params.sound);
 		rgb_led_matrix.setShader(notifier, params);
 		break;
 	case "aurora":
