@@ -40,7 +40,7 @@ app.get('/', function (req, res) {
 	params.height=1;
 
 	if(req.query.image)
-		params.image=req.query.image;
+		params.filename=req.query.image;
 	
 	params.name=req.query.shader;
 	params.shader=req.query.shader;
@@ -83,7 +83,7 @@ function set_shader(params)
 		rgb_led_matrix.setShader(cpu_meter, params);
 		break;
 	case "notifier":
-		params.image = path.join(__dirname + "/img/" + params.image);
+		params.image = path.join(__dirname + "/img/" + params.filename);
 		rgb_led_matrix.setShader(notifier, params);
 		break;
 	case "aurora":
