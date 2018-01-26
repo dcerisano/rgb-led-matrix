@@ -13,7 +13,7 @@
     "escapedName": "rgb-led-matrix",
     "rawSpec": "^1.4.0",
     "saveSpec": null,
-    "fetchSpec": "^1.4.0"
+    "fetchSpec": "^1.4.1"
   },
   "_requiredBy": [
     "#USER",
@@ -62,7 +62,7 @@
   ],
   "licenses": [
     {
-      "type": "MIT",
+      "type": "UNLICENSED",
       "url": "https://raw.githubusercontent.com/dcerisano/rgb-led-matrix/master/LICENSE"
     }
   ],
