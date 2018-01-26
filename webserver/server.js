@@ -35,7 +35,10 @@ var socket = null;
 //REST API
 
 app.get('/', function (req, res) {
-	interpret(req.query.message);
+
+	params = {};
+	params.shader=req.query.shader;
+	set_shader(params);
 	res.end();
 });
 
