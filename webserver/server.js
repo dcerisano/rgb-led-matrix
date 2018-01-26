@@ -39,7 +39,7 @@ app.get('/', function (req, res) {
 	params.width=8;
 	params.height=1;
 
-	if(req.query.image)
+	if(req.query.filename)
 		params.image=req.query.filename;
 	
 	params.name=req.query.shader;
