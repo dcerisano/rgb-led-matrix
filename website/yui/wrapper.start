@@ -1,0 +1,7 @@
+function init()
+{
+	rgb_led_matrix_init();
+}
+
+function rgb_led_matrix_init()
+{

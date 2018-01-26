@@ -1,0 +1,16 @@
+TODO
+UI overlay (responsive, 360)
+RGBA layers
+Consumer should rotate to producer aspect ratio
+Device channel sync support 
+DONE
+Specify width and height for matrices, setSize(W,H) getSize()==>WxH
+Add more notification images (s3d, vrip, twitter, etc)
+Concurrent devices
+RGB Emulator Matrix REM (websockets - standalone or in parallel with BlinkStick)
+Refactor as npm project
+Add plasma effect
+Pure javascript, no build required
+Device and shader independent w,h (auto scaling)
+ 
+ 

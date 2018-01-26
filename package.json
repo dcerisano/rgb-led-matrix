@@ -1,0 +1,76 @@
+{
+  "_from": "rgb-led-matrix@^1.4.0",
+  "_id": "rgb-led-matrix@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+Ry36LwnSv2aku1YKGLITEWFesc2YiTAWjg9i62l2lEsPzx7wehoRV4LklS+hcF4LLUTyMCLQZO2SOXp8jm4ng==",
+  "_location": "/rgb-led-matrix",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "rgb-led-matrix@^1.4.0",
+    "name": "rgb-led-matrix",
+    "escapedName": "rgb-led-matrix",
+    "rawSpec": "^1.4.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.4.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rgb-led-matrix/-/rgb-led-matrix-1.4.0.tgz",
+  "_shasum": "077586472a6ff5e860992141ec2b1e891ffb3c09",
+  "_spec": "rgb-led-matrix@^1.4.0",
+  "_where": "/home/dcerisano/node/node_modules",
+  "author": {
+    "name": "Dominico Cerisano",
+    "url": "http://twitter.com/dcerisano"
+  },
+  "bugs": {
+    "url": "https://github.com/dcerisano/rgb-led-matrix/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [],
+  "dependencies": {
+    "express": "4.16.2",
+    "http": "0.0.0",
+    "jimp": "0.2.28",
+    "node-hid": "0.7.2",
+    "pinkie-promise": "^2.0.1",
+    "temp": "^0.8.3",
+    "url": "0.11.0",
+    "ws": "4.0.0"
+  },
+  "deprecated": false,
+  "description": "Universal RGB Matrix controller for Node.js. Supports realtime frame streaming (eg. Ambilight). BlinkStick RGB LED controller given as example.",
+  "engines": {
+    "node": ">=0.8.x"
+  },
+  "homepage": "https://github.com/dcerisano/rgb-led-matrix#readme",
+  "keywords": [
+    "rgb",
+    "led",
+    "matrix",
+    "blinkstick",
+    "neopixel",
+    "ambilight",
+    "steelseries",
+    "gamesense",
+    "firmata",
+    "i2c"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/dcerisano/rgb-led-matrix/master/LICENSE"
+    }
+  ],
+  "main": "./rgb-led-matrix",
+  "name": "rgb-led-matrix",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcerisano/rgb-led-matrix.git"
+  },
+  "version": "1.4.0"
+}
