@@ -54,9 +54,6 @@
     "matrix",
     "blinkstick",
     "neopixel",
-    "ambilight",
-    "steelseries",
-    "gamesense",
     "firmata",
     "i2c"
   ],
