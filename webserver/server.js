@@ -17,7 +17,6 @@ const url            = require('url');
 const path           = require('path');
 const WebSocket      = require('ws');
 
-const notifier    = require("../shaders/notifier.js");
 const unicorn     = require("../shaders/unicorn.js");
 const fireplace   = require("../shaders/fireplace.js");
 const aurora      = require("../shaders/aurora.js");
