@@ -83,7 +83,7 @@ function set_shader(params)
 		rgb_led_matrix.setShader(cpu_meter, params);
 		break;
 	case "notifier":
-		params.filename = path.join(__dirname + "/img/" + params.filename);
+		params.image = path.join(__dirname + "/img/" + params.filename);
 		rgb_led_matrix.setShader(notifier, params);
 		break;
 	case "aurora":
