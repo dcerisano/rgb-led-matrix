@@ -1,9 +1,6 @@
 # rgb-led-matrix
-
-![alt_text](https://dcerisano.github.io/assets/img/rgb_led_matrix.png)  
   
 * For RGB devices (matrix and strip) 
-* Windows, Linux, or Mac
 
 #### Currently supported
 * [BlinkStick](https://www.blinkstick.com) RGB device (64 LEDS per channel)
